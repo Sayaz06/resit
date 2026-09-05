@@ -3043,7 +3043,10 @@
     document.getElementById('btn-logout').onclick = function() { auth.signOut(); };
     document.getElementById('btn-go-bahasa').onclick = startBahasa;
     document.getElementById('btn-go-fakta').onclick = startFakta;
-    document.getElementById('btn-back-menu').onclick = function() { showScreen('screen-menu'); };
+    document.getElementById('btn-back-menu').onclick = function() {
+      isLoading = false;
+      showScreen('screen-menu');
+    };
 
     // ══════════════════════════════════════════
     // OTHER MOTIVATION
